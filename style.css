@@ -1,0 +1,10 @@
+.count {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  width: 8rem;
+}
+main {
+  background-color: antiquewhite;
+  padding: 20px;
+}
