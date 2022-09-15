@@ -5,6 +5,11 @@
   width: 8rem;
 }
 main {
-  background-color: antiquewhite;
+  background-color: beige;
   padding: 20px;
+  border-radius: 1rem;
+}
+img {
+  border-radius: 1rem;
+  width: ;
 }
