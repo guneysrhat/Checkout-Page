@@ -24,7 +24,14 @@ productsDiv.addEventListener("click", (event) => {
       calculateProductPrice(event.target);
       calculateCartPrice();
     } else {
-      if (confirm("Products will be removed?")) {
+      if (
+        confirm(
+          `${
+            event.target.parentElement.parentElement.querySelector("h2")
+              .innerText
+          } will be deleted!!`
+        )
+      ) {
         //*remove
         event.target.parentElement.parentElement.parentElement.remove();
         calculateCartPrice();
