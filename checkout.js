@@ -1,17 +1,16 @@
-const TexRate = 0.18;
-const shippingPrice = 15;
-const shippingFreePrice = 300;
+// const TexRate = 0.18;
+// const shippingPrice = 15;
+// const shippingFreePrice = 300;
 
 window.addEventListener("load", () => {
   //! set items to localStorage
-  localStorage.setItem("TexRate", TexRate);
-  localStorage.setItem("shippingPrice", shippingPrice);
-  localStorage.setItem("shippingFreePrice", shippingFreePrice);
-
-  //! set items to sessionStorage
-  sessionStorage.setItem("TexRate", TexRate);
-  sessionStorage.setItem("shippingPrice", shippingPrice);
-  sessionStorage.setItem("shippingFreePrice", shippingFreePrice);
+  //   localStorage.setItem("TexRate", TexRate);
+  //   localStorage.setItem("shippingPrice", shippingPrice);
+  //   localStorage.setItem("shippingFreePrice", shippingFreePrice);
+  //   //! set items to sessionStorage
+  //   sessionStorage.setItem("TexRate", TexRate);
+  //   sessionStorage.setItem("shippingPrice", shippingPrice);
+  //   sessionStorage.setItem("shippingFreePrice", shippingFreePrice);
 });
 
 const productsDiv = document.querySelector(".products");
@@ -32,7 +31,15 @@ productsDiv.addEventListener("click", (event) => {
     event.target.previousElementSibling.innerText++;
   } else if (event.target.className == "remove-product") {
     //console.log("remove btn is clicked!");
+    event.target.parentElement.parentElement.parentElement.remove();
   } else {
     //console.log("other element is clicked!");
   }
 });
+
+const calculateProductPrice = () => {
+    
+};
+const calculateCartPrice = () => {
+
+};
